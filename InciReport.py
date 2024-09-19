@@ -6,7 +6,7 @@ import plotly.express as px
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
-#server = app.server
+server = app.server
 
 # Load and preprocess the data
 df = pd.read_excel('inci.xlsx')
@@ -163,7 +163,7 @@ def update_pie_chart(_):
                      color_discrete_sequence=px.colors.sequential.RdBu)
     
     pie_fig.update_traces(hoverinfo='label+value+percent', opacity=0.8)
-    return #pie_fig
+    return pie_fig
 
 # Run the app
 if __name__ == '__main__':
