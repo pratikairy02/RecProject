@@ -1,1 +1,1 @@
-gunicorn InciReport:app
+gunicorn InciReport:app.server
