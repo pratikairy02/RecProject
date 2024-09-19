@@ -3,5 +3,6 @@ plotly
 pandas
 requests
 gunicorn
+openpyxl
 dash-core-components
 dash-html-components
