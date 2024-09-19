@@ -9,7 +9,8 @@ app = dash.Dash(__name__)
 #server = app.server
 
 # Load and preprocess the data
-df = pd.read_excel('/path/to/server/directory/inci.xlsx')
+df = pd.read_excel('inci.xlsx')
+')
 
 # Clean column names
 df.columns = df.columns.str.strip().str.replace('\n', ' ').str.replace('\xa0', ' ', regex=False)
