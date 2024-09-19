@@ -6,7 +6,7 @@ import plotly.express as px
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
-server = app.server
+#server = app.server
 
 # Load and preprocess the data
 df = pd.read_excel('inci.xlsx')
@@ -166,5 +166,5 @@ def update_pie_chart(_):
     return #pie_fig
 
 # Run the app
-#if __name__ == '__main__':
-    #app.run_server(debug=True)
+if __name__ == '__main__':
+    app.run_server(debug=True)
