@@ -112,7 +112,7 @@ def update_graphs(selected_type):
 
     # Total Incidents Count
     total_incidents_fig = px.bar(filtered_df, x=['Total Incidents'], y=[len(filtered_df)], title='Total Incident Count',
-                                  color_discrete_sequence=['black'])
+                                  color_discrete_sequence=['gray'])
 
     # Incident Types Count
     incident_types_count_df = filtered_df['Incident Type'].str.replace(r'\s*\(.*?\)', '', regex=True).value_counts().reset_index()
